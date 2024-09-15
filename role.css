@@ -1,0 +1,496 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  /* line-height: 2; */
+  /* border: 5px solid #ddd; */
+  border-radius: 15px;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+  url("../fonts/OpenSans-Regular.woff2") format('woff2'),
+  url("../fonts/OpenSans-Regular.woff") format('woff'),
+  url("../fonts/OpenSans-Regular.eot") format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.blog-header-logo {
+  font-family: "Arial", "Times New Roman", sans-serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+.btn-primary {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #010101; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  border-color: rgb(255, 255, 255);
+}
+body {
+    /* background:#f4f2f2; */
+    /* background:#f7f5f5; */
+    background:#f5f6f7;
+  background-image: #ddf3f3;
+}
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.posicke {
+width :100%!important
+}
+
+.position-sticke {
+  position: -webkit-sticky; /* Для поддержки Safari */
+            position: sticky;
+            bottom: 0;
+}
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+.news-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.custom-badge {
+  border-width: 10px 30px;
+}
+.custom-badge1 {
+  padding: 0px;
+}
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+.custom-container {
+   display: flex;
+  /* flex-wrap: wrap; */ 
+  gap: 16px; /* Регулируйте значение, чтобы добавить промежуток между блоками */
+}
+.custom-container:hover {
+  background-color: #c8e3e8 ;
+}
+.custom-badge {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  margin-right: 8px; /* Пространство между тегами */
+  white-space: normal !important;
+}
+.interactive-link {
+  color: rgb(0, 89, 255);
+}
+.nav-scroller {
+  position: relative;
+
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.form-control::placeholder {
+  text-decoration: none; /* Remove underline */
+}
+.chess {
+  /* border-bottom: 10px solid #ddd;
+  border-left: 10px solid #ddd; 
+  border-top: 10px solid #ddd;  */
+  padding: 12px 16px;
+  overflow: hidden;
+}
+.otstupmen {
+  font-weight: bold;
+padding: 12px 16px;
+}
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  /* padding-bottom: 1rem; */
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+.outer-div {
+  display: flex; /* Use flex layout */
+  flex-direction: column; /* Arrange child elements vertically */
+  align-items: stretch; /* Stretch child elements horizontally to fill the container */
+}
+
+/* Style for the inner div with class "col-md-12 px-0 flex-grow-1" */
+.inner-div {
+  flex: 1; /* Make this div grow to fill the available space */
+  overflow: hidden; /* Hide any content that overflows */
+}
+
+/* Style for the <p> element with class "lead my-2" */
+.lead {
+
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Preserve whitespace and break lines */
+  overflow-wrap: break-word; /* Wrap long words to prevent overflow */
+ 
+}
+
+    .hidden {
+      display: none;
+    }
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+.morecontent span {
+  display: none;
+}
+.overtext {
+  overflow: hidden!important;
+}
+.morelink {
+  font-weight: bold;
+  color: #565656;
+}
+.tag-checkbox input[type="radio"] {
+  display: none;
+}
+.tag-checkbox input[type="checkbox"] {
+  display: none;
+}
+    /* Styling for the tag checkboxes */
+.tag-checkbox {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 10px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative; /* Add this line */
+  color: #565656;
+  border:2px solid #ddd;
+  
+}
+.tag-checkbox1 {
+  border-top-right-radius: 0; /* Убедитесь, что нет радиуса границы сверху справа */
+  border-bottom-right-radius: 0; /* Убедитесь, что нет радиуса границы снизу справа */
+}
+
+.tag-checkbox-label {
+  width: 100%; /* Add this line */
+}
+.tag-checkbox label {
+  width: 100%; /* Add this line */
+}
+.tag-checkbox:hover {
+  background-color: #e0e0e0;
+}
+
+/* Styling for selected checkboxes */
+.tag-checkbox.checked {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important;
+  color: white;
+}
+.custom-button {
+  align-items: center;
+  height: 100%; /* Сделать высоту кнопки 100%, чтобы она совпадала с высотой метки */
+  margin: 0; /* Удалить стандартный отступ */
+  /* padding: 0.375rem 0.75rem; Настройка отступов по мере необходимости */
+  border-top-left-radius: 0; /* Убедитесь, что нет радиуса границы сверху справа */
+    border-bottom-left-radius: 0; /* Убедитесь, что нет радиуса границы снизу справа */
+}
+
+.tag-checkbox.checked:hover {
+  background-color: #333;
+}
+.morecontent span {
+  display: none;
+}
+/*   
+.text_hide_wrap {
+  max-width: 700px;
+}
+ */
+.item_text {
+  width: 100%;
+}
+
+.item_text p {
+  margin-bottom: 20px;
+}
+
+.io_item {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.io_button_wrap {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.io_button {
+  display: inline-block;
+  border: 1px solid #f00;
+  width: auto;
+  padding: 0 20px;
+  line-height: 32px;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: #f00 !important;
+  font-size: 10pt;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+a.io_button:hover {
+  text-decoration: none;
+}
+
+.io_item .btn_close {
+  display: none;
+}
+
+.io_item .btn_open {
+  display: inline-block;
+}
+
+.io_item.open .btn_close {
+  display: inline-block;
+}
+
+.io_item.open .btn_open {
+  display: none;
+}
+
+.io_trans {
+  width: inherit;
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  transition: 1s;
+}
+
+.io_item.open .io_trans {
+  height: 0;
+  transition: 1s;
+}
+
+.io_item_wrap {
+  position: relative;
+  overflow: hidden;
+  max-height: 100px;
+  width: inherit;
+  transition: max-height 0.5;
+}
+.io_item.open .io_item_wrap {
+  max-height: 999px !important;
+  transition: max-height 1s;
+}
+
+@media(min-width: 576px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+  }
+}
+
+@media(min-width: 768px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1170px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1500px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1860px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1860px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 2560px;
+  }
+}
+@media (min-width: 3840px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 3840px;
+  }
+}
+.custom-button-container {
+height: 100%;
+}
+.nav-link {
+  font-size: 1.5em;
+}
+.nav-link1 {
+  font-size: 1em;
+  display: block;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.div123{
+  background: white;
+}
+.dropdown-toggle {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+.content {
+  min-height: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+  z-index: 0;
+}
+
+.content h1 {
+  padding: 75px 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.content .buttons {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.content .buttons .button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #efefef;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.content .buttons .button:hover {
+  color: white;
+  background: #009bd5;
+}
+
+.carousel-container .carousel {
+            display: none;
+        }
+        /* body {
+          background: linear-gradient(90deg, #fffdfd, #efefef);
+        } */
+
+        /* Стили для блока-триггера */
+        .carousel-container .carousel-trigger {
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Стили для карусели */
+        .carousel-container .carousel img {
+            max-width: 100%;
+            height: auto;
+        }
+        .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: rgba(0,0,0,0.5); /*затемнитефон*/
+      }
+ /* Стили для стрелочек при светлом фоне */
+ .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000; /* Черный цвет иконок */
+    border-radius: 40px;
+  }
+
+  /* Стили для текста "Previous" и "Next" при светлом фоне */
+  .carousel-control-prev-icon .visually-hidden, .carousel-control-next-icon .visually-hidden {
+    color: #000; /* Черный цвет текста */
+    border-radius: 10px;
+  }
+  #two:hover {
+    filter: brightness(0.8); /* Уменьшить яркость при наведении (0.8 - 80%) */
+}

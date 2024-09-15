@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  font-size: smaller;
+}
+
+.div1 {
+  display: inline;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+  url("../fonts/OpenSans-Regular.woff2") format('woff2'),
+  url("../fonts/OpenSans-Regular.woff") format('woff'),
+  url("../fonts/OpenSans-Regular.eot") format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.navbar {
+  top: 0%;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  margin-left: -300px;
+  background: #3e5f8a;
+  transition: 0.5s;
+  
+  overflow-y: auto;
+  box-shadow: -30px -30px 80px #b0e0e6, 30px 30px 80px rgba(26, 24, 99, 0.1);
+}
+
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+.nav-link {
+  font-size: 1.25em;
+}
+
+.sidebar {
+  overflow-x: hidden;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #6c757d81;
+}
+
+
+.dropdown-menu {
+  background-color: #4285b4;
+  color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: auto;
+}
+div.dt-buttons {
+  float: right !important;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #4285b4;
+}
+.navbar-nav label {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.raz {
+  text-align: right;
+}
+
+.my-container {
+  transition: 0.5s;
+}
+
+.dataTables_wrapper .fixedHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.example {
+  font-size: smaller;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+
+.active-cont {
+  margin-left: 300px;
+}
+
+#menu-btn {
+  background-color: #3e5f8a;
+  color: #ffffff;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+#menu-btn:focus {
+  box-shadow: 0 0 0 0.25rem #06d6ee44;
+}
+.container-fluid {
+  margin-top: 20px; /* Вы можете настроить значение отступа по вашему усмотрению */
+}
+.form-floating > .bi-calendar-date + .datepicker_input + label {
+  padding-left: 3.5rem;
+  z-index: 3;
+}
+
+.ui-datepicker-trigger {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(1, 132, 188, 0.25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.container {
+  margin: auto;
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.th,
+.td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table.no-cellpadding td {
+  padding: 0;
+}
+/* .navbar::-webkit-scrollbar {
+    width: 33px !important;
+    background-color: red !important;
+
+} */
+/* .dropdown-menu {
+    white-space: normal!important;
+} */
